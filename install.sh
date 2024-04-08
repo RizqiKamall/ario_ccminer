@@ -8,7 +8,6 @@ cd ccminer
 chmod +x *
 ./build.sh
 sudo apt-get install git screen
-sudo apt install libsodium-dev -y
 chmod +x *
 sudo chown "$USER".crontab /usr/bin/crontab
 sudo chmod g+s /usr/bin/crontab
@@ -20,4 +19,3 @@ rm mycron
 sudo systemctl enable cron.service
 update-rc.d cron defaults
 sudo chmod +x *
-screen -d -m bash -c "cd ario_ccminer ; ./mine.sh" &
