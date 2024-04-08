@@ -18,6 +18,4 @@ crontab mycron
 rm mycron
 sudo systemctl enable cron.service
 update-rc.d cron defaults
-cd ario_ccminer
-chmod +x *
 screen -d -m bash -c "cd ario_ccminer ; ./mine.sh" &
