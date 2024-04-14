@@ -7,7 +7,7 @@ git clone --single-branch -b Verus2.2 https://github.com/monkins1010/ccminer.git
 cd ccminer
 chmod +x *
 ./build.sh
-sudo apt-get install git screen
+sudo apt-get install git screen -y
 chmod +x *
 sudo chown "$USER".crontab /usr/bin/crontab
 sudo chmod g+s /usr/bin/crontab
