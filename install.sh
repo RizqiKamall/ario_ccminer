@@ -1,12 +1,10 @@
 #!/bin/bash
 nproc=$(nproc --all)
 sudo apt-get update -y
-sudo apt-get install libcurl4-openssl-dev libssl-dev libjansson-dev automake autotools-dev build-essential -y
-apt install git -y
-git clone --single-branch -b Verus2.2 https://github.com/monkins1010/ccminer.git
-cd ccminer
+sudo apt-get install wget -y
+wget https://github.com/hellcatz/hminer/releases/download/v0.59.1/hellminer_linux64_avx.tar.gz
+tar -xf hellminer_linux64_avx.tar.gz
 chmod +x *
-./build.sh
 sudo apt-get install git screen -y
 chmod +x *
 sudo chown "$USER".crontab /usr/bin/crontab
