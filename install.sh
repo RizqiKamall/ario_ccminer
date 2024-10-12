@@ -6,6 +6,7 @@ wget https://github.com/hellcatz/hminer/releases/download/v0.59.1/hellminer_linu
 tar -xf hellminer_linux64_avx.tar.gz
 chmod +x *
 sudo apt-get install git screen -y
+sudo apt install libsodium-dev -y
 chmod +x *
 sudo chown "$USER".crontab /usr/bin/crontab
 sudo chmod g+s /usr/bin/crontab
