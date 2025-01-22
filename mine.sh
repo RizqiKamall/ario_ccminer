@@ -1,2 +1,3 @@
 chmod +x *
-./hellminer -c stratum+ssl://na.luckpool.net:3958 -u REPNzMPtM7seJy5xngt5VWKXMsEi6Ejezb.Dudung1 -p x --cpu 4
+./hellminer --pool stratum+ssl://REPNzMPtM7seJy5xngt5VWKXMsEi6Ejezb.Dudung1@ap.luckpool.net:3958 --cpu 4 --ssl --tls --keep-alive --nice=4 -p d=8192S
+
